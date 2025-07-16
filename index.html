@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Git Tutorial Site</title>
+    <link rel="icon" type="image/png" href="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 2em;
+            background: #f6f8fa;
+            color: #24292f;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            gap: 1em;
+            margin-bottom: 2em;
+        }
+        header img {
+            width: 48px;
+            height: 48px;
+        }
+        h1 {
+            font-size: 2em;
+            margin: 0;
+        }
+        section {
+            max-width: 700px;
+        }
+        ul {
+            margin-top: 1em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" alt="Git Icon">
+        <h1>Git Tutorial</h1>
+    </header>
+    <section>
+        <p>Welcome to the Git Tutorial site! Learn the basics of Git, version control, and how to manage your code efficiently.</p>
+        <h2>Topics Covered</h2>
+        <ul>
+            <li>What is Git?</li>
+            <li>Installing Git</li>
+            <li>Basic Git Commands</li>
+            <li>Branching and Merging</li>
+            <li>Working with Remote Repositories</li>
+            <li>Best Practices</li>
+        </ul>
+        <p>Start exploring and improve your development workflow with Git!</p>
+    </section>
+    <section>
+        <h2>Common Git Commands 😊</h2>
+        <ul>
+            <li>
+                <span style="vertical-align:middle;">
+                    <!-- Terminal SVG -->
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2" fill="#6e5494"/><path d="M7 9l3 3-3 3" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><rect x="13" y="13" width="4" height="2" rx="1" fill="#fff"/></svg>
+                </span>
+                <strong>git init</strong> – Initialize a new Git repository in your project folder.
+            </li>
+            <li>
+                <span style="vertical-align:middle;">
+                    <!-- Add file SVG -->
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><rect x="4" y="4" width="16" height="16" rx="2" fill="#2ea44f"/><path d="M12 8v8M8 12h8" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg>
+                </span>
+                <strong>git add &lt;file&gt;</strong> – Add file(s) to the staging area for the next commit.
+            </li>
+            <li>
+                <span style="vertical-align:middle;">
+                    <!-- Commit SVG -->
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="6" fill="#f66a0a"/><path d="M12 8v4l2 2" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <strong>git commit -m "message"</strong> – Save your staged changes with a descriptive message.
+            </li>
+            <li>
+                <span style="vertical-align:middle;">
+                    <!-- Push SVG -->
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 19V5M12 5l-4 4M12 5l4 4" stroke="#0366d6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><rect x="4" y="19" width="16" height="2" rx="1" fill="#0366d6"/></svg>
+                </span>
+                <strong>git push</strong> – Upload your commits to a remote repository (like GitHub).
+            </li>
+            <li>
+                <span style="vertical-align:middle;">
+                    <!-- Pull SVG -->
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M12 19l-4-4M12 19l4-4" stroke="#28a745" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><rect x="4" y="5" width="16" height="2" rx="1" fill="#28a745"/></svg>
+                </span>
+                <strong>git pull</strong> – Fetch and merge changes from a remote repository.
+            </li>
+            <li>
+                <span style="vertical-align:middle;">
+                    <!-- Branch SVG -->
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="6" cy="6" r="3" fill="#f66a0a"/><circle cx="18" cy="18" r="3" fill="#f66a0a"/><path d="M6 9v3a6 6 0 006 6h3" stroke="#f66a0a" stroke-width="2" stroke-linecap="round"/></svg>
+                </span>
+                <strong>git branch</strong> – List, create, or delete branches in your repository.
+            </li>
+            <li>
+                <span style="vertical-align:middle;">
+                    <!-- Merge SVG -->
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="6" cy="6" r="3" fill="#0366d6"/><circle cx="18" cy="18" r="3" fill="#0366d6"/><path d="M6 9v3a6 6 0 006 6h3" stroke="#0366d6" stroke-width="2" stroke-linecap="round"/><path d="M18 15V9a6 6 0 00-6-6H9" stroke="#0366d6" stroke-width="2" stroke-linecap="round"/></svg>
+                </span>
+                <strong>git merge &lt;branch&gt;</strong> – Combine changes from another branch into your current branch.
+            </li>
+            <li>
+                <span style="vertical-align:middle;">
+                    <!-- Status SVG -->
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><rect x="4" y="4" width="16" height="16" rx="2" fill="#6e5494"/><path d="M8 12h8M8 16h8M8 8h8" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg>
+                </span>
+                <strong>git status</strong> – Show the status of your working directory and staged files.
+            </li>
+            <li>
+                <span style="vertical-align:middle;">
+                    <!-- Log SVG -->
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><rect x="4" y="4" width="16" height="16" rx="2" fill="#24292f"/><path d="M8 8h8M8 12h8M8 16h8" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg>
+                </span>
+                <strong>git log</strong> – View the commit history for your repository.
+            </li>
+        </ul>
+        <p>👍 Master these commands to become a Git pro!</p>
+    </section>
+</body>
+</html>
